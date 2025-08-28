@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WORDLE</h1>
+            <div class="stats">
+                <span id="current-guess">1</span>/6
+            </div>
+        </header>
+        
+        <div class="game-board" id="game-board">
+            <!-- game tiles will be generated here -->
+        </div>
+        
+        <div class="keyboard" id="keyboard">
+            <!-- keyboard will be generated here -->
+        </div>
+        
+        <div class="message" id="message"></div>
+        
+        <div class="game-over" id="game-over" style="display: none;">
+            <h2 id="game-result"></h2>
+            <p id="correct-word"></p>
+            <button id="new-game-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
