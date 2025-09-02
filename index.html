@@ -11,7 +11,19 @@
         <header>
             <h1>WORDLE</h1>
             <div class="stats">
-                <span id="current-guess">1</span>/6
+                <div class="stats-row">
+                    <div class="level-picker">
+                        <label for="level" class="level-label">level</label>
+                        <select id="level">
+                            <option value="easy" selected>easy</option>
+                            <option value="medium">medium</option>
+                            <option value="hard">hard</option>
+                        </select>
+                    </div>
+                    <div class="guesses">
+                        <span id="current-guess">1</span>/<span id="max-guesses">6</span>
+                    </div>
+                </div>
             </div>
         </header>
         
