@@ -7,7 +7,7 @@ class WordleGame {
                 'image','juice','knife','lemon','music','night','ocean','peace',
                 'queen','river','smile','table','unity','voice','water','youth',
                 'zebra','brave','cloud','dream','earth','faith','grace','heart',
-                'cream'
+                'cream','eerie'
             ],
             medium: [
                 'abide','blush','cider','dwarf','fewer','gloom','hinge','irony',
@@ -22,15 +22,16 @@ class WordleGame {
         };
         this.settingsByLevel = {
             easy: { maxGuesses: 6 },
-            medium: { maxGuesses: 6 },
-            hard: { maxGuesses: 5 }
+            medium: { maxGuesses: 5 },
+            hard: { maxGuesses: 4 }
         };
         this.dictionary = new Set([
             ...this.wordPools.easy,
             ...this.wordPools.medium,
             ...this.wordPools.hard,
             'steam','bread','tiger','horse','stone','plane','candy','light',
-            'sugar','metal','pilot','crown','sound','rough','sweat','trace'
+            'sugar','metal','pilot','crown','sound','rough','sweat','trace',
+            'eerie'
         ]);
         this.currentWord = '';
         this.currentRow = 0;
